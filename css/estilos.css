@@ -1,0 +1,169 @@
+@charset "UTF-8";
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 20px;
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+header, footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: #333;
+	color: #fff;
+}
+
+main {
+	max-width: 900px;
+	margin: 20px auto;
+	/* Centra el contenido principal */
+	padding: 1rem;
+	min-height: 60vh;
+}
+
+footer li {
+	list-style: none;
+	font: bold 14px verdana;
+	padding: 0 15px;
+	display: inline-block;
+}
+
+/* EFECTO PARA LOS ÍCONOS */
+footer img:hover{
+	transform: scale(1.5);
+	transition: 0.3s;
+}
+
+article {
+	text-align: center;
+}
+
+article iframe{
+	display: block;
+	margin: 20px auto;
+	border: none;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+section{
+	flex:1;
+}
+
+aside{
+	flex: 1;
+	text-align: center;
+}
+
+aside img{
+	width: 150px;
+	height: auto;
+}
+
+nav a {
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: underline;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+nav a:hover {
+ background-color: #ddd;
+ border:1px solid gray;
+ color: black;
+}
+
+nav a.active {
+ background-color: dodgerblue;
+ border:1px solid gray;
+ color: white;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+	body {
+		padding: 10px;
+	}
+	main {
+		padding: 0;
+	}
+}
+
+/* ESTILOS PARA LA PARTE DE respuesta.jsp */
+.container-tarjeta {
+	max-width: 450px;
+	margin: 40px auto;
+	text-align: center;
+	background-color: #d8e5db;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.titulo-registro {
+	color: #4f6a5d;
+	font-weight: 300;
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+.separador {
+	border-top: 1px solid #b2c4ba;
+	margin-bottom: 25px;
+}
+
+.tabla-datos {
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+	width: 100%;
+	overflow: hidden;
+}
+
+.item-personalizado {
+	display: flex;
+	justify-content: center;
+	padding: 10px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	margin-top: -1px;
+	background: white;
+}
+
+.etiqueta { 
+	font-weight: bold; 
+	color: #000;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.valor {
+	color: #555;
+	text-align: right;
+}
+
+.btn-volver-img {
+	border: 1px solid #3b749f;
+	color: #3b749f;
+	background: #cce5ff;
+	padding: 8px 30px;
+	border-radius: 6px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*PARA LA GALERÍA*/
+.galeria{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 16px;
+}
